@@ -1,0 +1,174 @@
+# LOGFILE-NAME was not set explicitly.
+LOGFILE-NAME "mpi.stf"
+# PROGNAME was not set explicitly.
+PROGNAME "./mpi"
+# LOGFILE-FORMAT was not set explicitly.
+LOGFILE-FORMAT "STF"
+# ITFLOGFILE was not set explicitly.
+ITFLOGFILE OFF
+# EXTENDED-VTF was not set explicitly.
+EXTENDED-VTF OFF
+# PROTOFILE-NAME was not set explicitly.
+PROTOFILE-NAME "mpi.prot"
+# LOGFILE-PREFIX was not set explicitly.
+LOGFILE-PREFIX "/gsfs2/home/u14/tianyuq/hw4/mpi/5.16"
+# CURRENT-DIR was not set explicitly.
+CURRENT-DIR "/gsfs2/home/u14/tianyuq/hw4/mpi/5.16"
+# VERBOSE was not set explicitly.
+VERBOSE 1
+# LOGFILE-RANK was not set explicitly.
+LOGFILE-RANK 0
+# STOPFILE-NAME was not set explicitly.
+# PLUGIN was not set explicitly.
+# STATE was not set explicitly.
+
+STATE "*:*" ON
+
+# SYMBOL was not set explicitly.
+# ACTIVITY was not set explicitly.
+# KEEP-RAW-EVENTS was not set explicitly.
+KEEP-RAW-EVENTS OFF
+# COMPRESS-RAW-DATA was not set explicitly.
+COMPRESS-RAW-DATA ON
+# DETAILED-STATES was not set explicitly.
+DETAILED-STATES 0
+# DEMANGLE was not set explicitly.
+DEMANGLE OFF
+# ENTER-USERCODE was not set explicitly.
+ENTER-USERCODE ON
+# COUNTER was not set explicitly.
+# INTERNAL-MPI was not set explicitly.
+INTERNAL-MPI ON
+# PCTRACE was not set explicitly.
+PCTRACE 1:0
+# PCTRACE-FAST was not set explicitly.
+PCTRACE-FAST ON
+# PCTRACE-CACHE was not set explicitly.
+PCTRACE-CACHE ON
+# IGNORE-CODE was not set explicitly.
+# PROCESS was not set explicitly.
+# CLUSTER was not set explicitly.
+# MEM-BLOCKSIZE was not set explicitly.
+MEM-BLOCKSIZE 65536
+# MEM-MAXBLOCKS was not set explicitly.
+MEM-MAXBLOCKS 4096
+# MEM-MINBLOCKS was not set explicitly.
+MEM-MINBLOCKS 0
+# MEM-INFO was not set explicitly.
+MEM-INFO 524288000
+# AUTOFLUSH was not set explicitly.
+AUTOFLUSH ON
+# MEM-FLUSHBLOCKS was not set explicitly.
+MEM-FLUSHBLOCKS 1024
+# MEM-OVERWRITE was not set explicitly.
+MEM-OVERWRITE OFF
+# FLUSH-PREFIX was not set explicitly.
+FLUSH-PREFIX "/tmp/pbs.103704.service0"
+# FLUSH-PID was not set explicitly.
+FLUSH-PID ON
+# ENVIRONMENT was not set explicitly.
+ENVIRONMENT ON
+# STATISTICS was not set explicitly.
+STATISTICS 0
+# STF-USE-HW-STRUCTURE was not set explicitly.
+STF-USE-HW-STRUCTURE ON
+# STF-PROCS-PER-FILE was not set explicitly.
+STF-PROCS-PER-FILE 16
+# STF-CHUNKSIZE was not set explicitly.
+STF-CHUNKSIZE 65536
+# GROUP was not set explicitly.
+# OS-COUNTER-DELAY was not set explicitly.
+OS-COUNTER-DELAY 1.000000
+# TIMER was not set explicitly.
+TIMER "gettimeofday"
+# EVENT-BITS was not set explicitly.
+EVENT-BITS 13
+# TIMER-SHIFT was not set explicitly.
+TIMER-SHIFT 0
+# TIMER-DUMP was not set explicitly.
+TIMER-DUMP OFF
+# TIMER-SKIP was not set explicitly.
+TIMER-SKIP 0
+# SYNC-MAX-DURATION was not set explicitly.
+SYNC-MAX-DURATION 60.000000
+# SYNC-MAX-MESSAGES was not set explicitly.
+SYNC-MAX-MESSAGES 100
+# SYNC-SKEW was not set explicitly.
+SYNC-SKEW 0
+# SYNCED-CLUSTER was not set explicitly.
+SYNCED-CLUSTER OFF
+# SYNCED-HOST was not set explicitly.
+SYNCED-HOST ON
+# SYNCED-RUNTIME was not set explicitly.
+SYNCED-RUNTIME OFF
+# NMCMD was not set explicitly.
+NMCMD "nm -P"
+# UNIFY-SYMBOLS was not set explicitly.
+UNIFY-SYMBOLS ON
+# UNIFY-SCLS was not set explicitly.
+UNIFY-SCLS ON
+# UNIFY-GROUPS was not set explicitly.
+UNIFY-GROUPS ON
+# UNIFY-COUNTERS was not set explicitly.
+UNIFY-COUNTERS ON
+# INFO NUMPROCS was not set explicitly.
+INFO NUMPROCS 16
+# INFO CLUSTERDEF was not set explicitly.
+INFO CLUSTERDEF "htc41" 0:505 1:506 2:507 3:508 4:509 5:510 6:511 7:512 8:513 9:514
+INFO CLUSTERDEF "htc47" 10:1780 11:1781 12:1782 13:1783 14:1784 15:1785
+INFO PROCESS 0 "htc41" "10.140.56.13" 505
+INFO PROCESS 1 "htc41" "10.140.56.13" 506
+INFO PROCESS 2 "htc41" "10.140.56.13" 507
+INFO PROCESS 3 "htc41" "10.140.56.13" 508
+INFO PROCESS 4 "htc41" "10.140.56.13" 509
+INFO PROCESS 5 "htc41" "10.140.56.13" 510
+INFO PROCESS 6 "htc41" "10.140.56.13" 511
+INFO PROCESS 7 "htc41" "10.140.56.13" 512
+INFO PROCESS 8 "htc41" "10.140.56.13" 513
+INFO PROCESS 9 "htc41" "10.140.56.13" 514
+INFO PROCESS 10 "htc47" "10.140.56.19" 1780
+INFO PROCESS 11 "htc47" "10.140.56.19" 1781
+INFO PROCESS 12 "htc47" "10.140.56.19" 1782
+INFO PROCESS 13 "htc47" "10.140.56.19" 1783
+INFO PROCESS 14 "htc47" "10.140.56.19" 1784
+INFO PROCESS 15 "htc47" "10.140.56.19" 1785
+# STF-ACT-TIMELINE was not set explicitly.
+STF-ACT-TIMELINE 640
+# SYMBOL-HASHSIZE was not set explicitly.
+SYMBOL-HASHSIZE 1031
+# ACTIVITY-HASHSIZE was not set explicitly.
+ACTIVITY-HASHSIZE 13
+# CLASS-HASHSIZE was not set explicitly.
+CLASS-HASHSIZE 13
+# SCL-HASHSIZE was not set explicitly.
+SCL-HASHSIZE 509
+# FILEHANDLE-HASHSIZE was not set explicitly.
+FILEHANDLE-HASHSIZE 13
+# COUNTER-HASHSIZE was not set explicitly.
+COUNTER-HASHSIZE 13
+# GROUP-HASHSIZE was not set explicitly.
+GROUP-HASHSIZE 13
+# HASHBUFFER-SIZE was not set explicitly.
+HASHBUFFER-SIZE 1024
+# MATCH-HASHSIZE was not set explicitly.
+MATCH-HASHSIZE 251
+# FUNCTRACE-HASHSIZE was not set explicitly.
+FUNCTRACE-HASHSIZE 509
+INFO BINMODE ""
+INFO TIMING "1":7.710000e-03
+INFO TIMING "2":7.806000e-03
+INFO TIMING "3":7.806000e-03
+INFO TIMING "4":7.709000e-03
+INFO TIMING "5":7.846000e-03
+INFO TIMING "6":7.854000e-03
+INFO TIMING "7":7.848000e-03
+INFO TIMING "8":7.846000e-03
+INFO TIMING "9":7.842000e-03
+INFO TIMING "0":8.575000e-03
+INFO TIMING "10":1.062710e-01
+INFO TIMING "11":8.733300e-02
+INFO TIMING "12":9.997000e-02
+INFO TIMING "13":1.234920e-01
+INFO TIMING "14":1.140450e-01
+INFO TIMING "15":7.974400e-02
+# TIMING <process ()>:<runtime (seconds)>

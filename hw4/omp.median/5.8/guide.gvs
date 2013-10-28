@@ -1,0 +1,204 @@
+
+*** KAI statistics library  k3301
+
+
+*** Begin Task 0
+
+Environment variables:
+  OMP_NUM_THREADS  : 8           
+  OMP_SCHEDULE     : static      
+  OMP_DYNAMIC      : FALSE       
+  OMP_NESTED       : FALSE       
+  KMP_STATSFILE    : guide.gvs    
+  KMP_STATSCOLS    : 80          
+  KMP_INTERVAL     : 0           
+  KMP_BLOCKTIME    : 200         
+  KMP_PARALLEL     : 8           
+  KMP_STACKSIZE    : 4194304     
+  KMP_STACKOFFSET  : 0           
+  KMP_SCHEDULING   : <unknown>    
+  KMP_CHUNK        : <unknown>    
+  KMP_LIBRARY      : throughput    
+end
+
+System parameters:
+  start      : Sun Oct 27 22:12:11 2013    
+  stop       : Sun Oct 27 22:12:12 2013    
+  host       : htc32       
+  ncpu       : 12          
+end
+
+Unix process parameters:
+  maxrss     : 25332       
+  minflt     : 1284        
+  majflt     : 1           
+  nswap      : 0           
+  inblock    : 136         
+  oublock    : 22536       
+  nvcsw      : 96          
+  nivcsw     : 375         
+end
+
+Region counts:
+  serial regions   : 2           
+  barrier regions  : 1           
+  parallel regions : 1           
+end
+
+Program execution time (in seconds):
+  cpu              :     0.00 sec    
+  elapsed          :     0.80 sec    
+    serial         :     0.59 sec    
+    parallel       :     0.21 sec    
+  cpu percent      :     0.04 %    
+end
+
+Summary over all regions (has 8 threads):
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7
+  Sum Parallel  :    0.211    0.211    0.209    0.211    0.211    0.211    0.211
+                     0.211
+  Sum Barrier   :  3.3e-04  2.2e-04  3.9e-03  2.2e-03  3.4e-04    0.008  1.1e-06
+                     0.011
+  Sum Imbalance :  1.0e-05  1.0e-05  7.0e-06  7.0e-06  8.9e-06  7.0e-06  8.9e-06
+                   1.0e-05
+  Min Parallel  :  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05
+                   1.4e-05
+  Min Barrier   :  3.3e-04  2.2e-04  3.9e-03  2.2e-03  3.4e-04    0.008  1.1e-06
+                     0.011
+  Min Imbalance :  1.0e-05  1.0e-05  7.0e-06  7.0e-06  8.9e-06  7.0e-06  8.9e-06
+                   1.0e-05
+  Max Parallel  :    0.211    0.211    0.209    0.211    0.211    0.211    0.211
+                     0.211
+  Max Barrier   :  3.3e-04  2.2e-04  3.9e-03  2.2e-03  3.4e-04    0.008  1.1e-06
+                     0.011
+  Max Imbalance :  1.0e-05  1.0e-05  7.0e-06  7.0e-06  8.9e-06  7.0e-06  8.9e-06
+                   1.0e-05
+end
+
+Region #1 (has 8 threads) at main/46 in "unknown" (has 1 barriers):
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7
+  Sum Parallel  :    0.211    0.211    0.209    0.211    0.211    0.211    0.211
+                     0.211
+  Sum Barrier   :  3.3e-04  2.2e-04  3.9e-03  2.2e-03  3.4e-04    0.008  1.1e-06
+                     0.011
+  Min Parallel  :    0.211    0.211    0.209    0.211    0.211    0.211    0.211
+                     0.211
+  Min Barrier   :  3.3e-04  2.2e-04  3.9e-03  2.2e-03  3.4e-04    0.008  1.1e-06
+                     0.011
+  Max Parallel  :    0.211    0.211    0.209    0.211    0.211    0.211    0.211
+                     0.211
+  Max Barrier   :  3.3e-04  2.2e-04  3.9e-03  2.2e-03  3.4e-04    0.008  1.1e-06
+                     0.011
+end
+
+Region #1 (has 8 threads) profile:
+# Thread       Incl     Excl Routine 
+  0,0    :    0.211    0.000 main/46 "unknown"  
+  1,0    :    0.211    0.000 main/46 "unknown"  
+  2,0    :    0.209    0.000 main/46 "unknown"  
+  3,0    :    0.211    0.000 main/46 "unknown"  
+  4,0    :    0.211    0.000 main/46 "unknown"  
+  5,0    :    0.211    0.000 main/46 "unknown"  
+  6,0    :    0.211    0.000 main/46 "unknown"  
+  7,0    :    0.211    0.000 main/46 "unknown"  
+end
+
+Barrier region #(1,1) (has 8 threads) at main/69 in "unknown":
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7
+  Sum Parallel  :  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05
+                   1.4e-05
+  Sum Imbalance :  1.0e-05  1.0e-05  7.0e-06  7.0e-06  8.9e-06  7.0e-06  8.9e-06
+                   1.0e-05
+  Min Parallel  :  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05
+                   1.4e-05
+  Min Imbalance :  1.0e-05  1.0e-05  7.0e-06  7.0e-06  8.9e-06  7.0e-06  8.9e-06
+                   1.0e-05
+  Max Parallel  :  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05  1.4e-05
+                   1.4e-05
+  Max Imbalance :  1.0e-05  1.0e-05  7.0e-06  7.0e-06  8.9e-06  7.0e-06  8.9e-06
+                   1.0e-05
+end
+
+Barrier region #(1,1) (has 8 threads) profile:
+# Thread       Incl     Excl Routine 
+  0,0    :    0.000    0.000 main/46 "unknown"  
+  1,0    :    0.000    0.000 main/46 "unknown"  
+  2,0    :    0.000    0.000 main/46 "unknown"  
+  3,0    :    0.000    0.000 main/46 "unknown"  
+  4,0    :    0.000    0.000 main/46 "unknown"  
+  5,0    :    0.000    0.000 main/46 "unknown"  
+  6,0    :    0.000    0.000 main/46 "unknown"  
+  7,0    :    0.000    0.000 main/46 "unknown"  
+end
+
+Serial program regions:
+  Serial region #1 executes for 0.03 seconds
+    begins at START OF PROGRAM
+    ends before region #1 (using 8 threads) at main/46 in "unknown"
+  Serial region #2 executes for 0.55 seconds
+    begins after region #1 (using 8 threads) at main/46 in "unknown"
+    ends at END OF PROGRAM
+end
+
+Serial region #1 profile:
+# Thread       Incl     Excl Routine 
+end
+
+Serial region #2 profile:
+# Thread       Incl     Excl Routine 
+end
+
+Program events (total):
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7
+  mppbeg        :        1        0        0        0        0        0        0
+                         0
+  mppend        :        1        0        0        0        0        0        0
+                         0
+  serial        :        2        0        0        0        0        0        0
+                         0
+  mppbar        :        1        1        1        1        1        1        1
+                         1
+  mppfkd        :        1        0        0        0        0        0        0
+                         0
+  mppfrk        :        1        0        0        0        0        0        0
+                         0
+  mppjoi        :        1        0        0        0        0        0        0
+                         0
+  mppadj        :        7        0        0        0        0        0        0
+                         0
+  mpptid        :        1        0        0        0        0        0        0
+                         0
+end
+
+Region #1 (has 8 threads) events:
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7
+  mppbar        :        1        1        1        1        1        1        1
+                         1
+  mppfrk        :        1        0        0        0        0        0        0
+                         0
+end
+
+Barrier region #(1,1) (has 8 threads) events:
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7
+  mppjoi        :        1        0        0        0        0        0        0
+                         0
+end
+
+Serial section events:
+# Serial                #1       #2
+  mppbeg        :        1        0
+  mppend        :        0        1
+  serial        :        1        1
+  mppfkd        :        1        0
+  mppadj        :        7        0
+  mpptid        :        1        0
+end
+
+*** end
+

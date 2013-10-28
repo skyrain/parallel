@@ -1,0 +1,118 @@
+
+*** KAI statistics library  k3301
+
+
+*** Begin Task 0
+
+Environment variables:
+  OMP_NUM_THREADS  : 1           
+  OMP_SCHEDULE     : static      
+  OMP_DYNAMIC      : FALSE       
+  OMP_NESTED       : FALSE       
+  KMP_STATSFILE    : guide.gvs    
+  KMP_STATSCOLS    : 80          
+  KMP_INTERVAL     : 0           
+  KMP_BLOCKTIME    : 200         
+  KMP_PARALLEL     : 1           
+  KMP_STACKSIZE    : 4194304     
+  KMP_STACKOFFSET  : 0           
+  KMP_SCHEDULING   : <unknown>    
+  KMP_CHUNK        : <unknown>    
+  KMP_LIBRARY      : throughput    
+end
+
+System parameters:
+  start      : Sun Oct 27 22:07:30 2013    
+  stop       : Sun Oct 27 22:07:32 2013    
+  host       : htc31       
+  ncpu       : 12          
+end
+
+Unix process parameters:
+  maxrss     : 18820       
+  minflt     : 1178        
+  majflt     : 1           
+  nswap      : 0           
+  inblock    : 136         
+  oublock    : 22536       
+  nvcsw      : 8           
+  nivcsw     : 220         
+end
+
+Region counts:
+  serial regions   : 2           
+  barrier regions  : 0           
+  parallel regions : 1           
+end
+
+Program execution time (in seconds):
+  cpu              :     0.00 sec    
+  elapsed          :     2.00 sec    
+    serial         :     2.00 sec    
+    parallel       :     0.00 sec    
+  cpu percent      :     0.01 %    
+end
+
+Summary over all regions (has 1 threads):
+# Thread                #0
+  Sum Parallel  :    1.485
+  Min Parallel  :    1.485
+  Max Parallel  :    1.485
+end
+
+Region #1 (has 1 threads) at main/46 in "unknown":
+# Thread                #0
+  Sum Parallel  :    1.485
+  Min Parallel  :    1.485
+  Max Parallel  :    1.485
+end
+
+Region #1 (has 1 threads) profile:
+# Thread       Incl     Excl Routine 
+end
+
+Serial program regions:
+  Serial region #1 executes for 0.02 seconds
+    begins at START OF PROGRAM
+    ends before region #1 (using 1 threads) at main/46 in "unknown"
+  Serial region #2 executes for 0.50 seconds
+    begins after region #1 (using 1 threads) at main/46 in "unknown"
+    ends at END OF PROGRAM
+end
+
+Serial region #1 profile:
+# Thread       Incl     Excl Routine 
+end
+
+Serial region #2 profile:
+# Thread       Incl     Excl Routine 
+end
+
+Program events (total):
+# Thread                #0
+  mppbeg        :        1
+  mppend        :        1
+  serial        :        2
+  mppfkd        :        1
+  mppfrk        :        1
+  mppjoi        :        1
+  mpptid        :        1
+end
+
+Region #1 (has 1 threads) events:
+# Thread                #0
+  mppfrk        :        1
+  mppjoi        :        1
+end
+
+Serial section events:
+# Serial                #1       #2
+  mppbeg        :        1        0
+  mppend        :        0        1
+  serial        :        1        1
+  mppfkd        :        1        0
+  mpptid        :        1        0
+end
+
+*** end
+

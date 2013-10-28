@@ -1,0 +1,212 @@
+
+*** KAI statistics library  k3301
+
+
+*** Begin Task 0
+
+Environment variables:
+  OMP_NUM_THREADS  : 12          
+  OMP_SCHEDULE     : static      
+  OMP_DYNAMIC      : FALSE       
+  OMP_NESTED       : FALSE       
+  KMP_STATSFILE    : guide.gvs    
+  KMP_STATSCOLS    : 80          
+  KMP_INTERVAL     : 0           
+  KMP_BLOCKTIME    : 200         
+  KMP_PARALLEL     : 12          
+  KMP_STACKSIZE    : 4194304     
+  KMP_STACKOFFSET  : 0           
+  KMP_SCHEDULING   : <unknown>    
+  KMP_CHUNK        : <unknown>    
+  KMP_LIBRARY      : throughput    
+end
+
+System parameters:
+  start      : Sun Oct 27 21:50:05 2013    
+  stop       : Sun Oct 27 21:50:05 2013    
+  host       : htc40       
+  ncpu       : 12          
+end
+
+Unix process parameters:
+  maxrss     : 9844        
+  minflt     : 994         
+  majflt     : 0           
+  nswap      : 0           
+  inblock    : 0           
+  oublock    : 0           
+  nvcsw      : 105         
+  nivcsw     : 91          
+end
+
+Region counts:
+  serial regions   : 2           
+  barrier regions  : 1           
+  parallel regions : 1           
+end
+
+Program execution time (in seconds):
+  cpu              :     0.00 sec    
+  elapsed          :     0.06 sec    
+    serial         :     0.05 sec    
+    parallel       :     0.01 sec    
+  cpu percent      :     0.10 %    
+end
+
+Summary over all regions (has 12 threads):
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7       #8       #9      #10      #11
+  Sum Parallel  :    0.009  2.6e-03    0.009    0.008    0.009    0.008  2.9e-04
+                   3.8e-04    0.008    0.008  2.2e-04  1.3e-04
+  Sum Barrier   :    0.008  2.1e-03    0.008    0.008  2.2e-03    0.008  7.3e-05
+                   1.5e-04  2.8e-04    0.008  8.4e-05  1.1e-06
+  Sum Imbalance :  2.2e-05  2.1e-05  2.0e-05  2.0e-05  2.1e-05  2.1e-05  2.1e-05
+                   5.0e-06  1.2e-05  2.1e-05  1.2e-05  1.2e-05
+  Min Parallel  :  2.7e-05  2.6e-05  2.6e-05  2.7e-05  2.7e-05  2.6e-05  2.7e-05
+                   2.7e-05  2.7e-05  2.7e-05  2.7e-05  2.7e-05
+  Min Barrier   :    0.008  2.1e-03    0.008    0.008  2.2e-03    0.008  7.3e-05
+                   1.5e-04  2.8e-04    0.008  8.4e-05  1.1e-06
+  Min Imbalance :  2.2e-05  2.1e-05  2.0e-05  2.0e-05  2.1e-05  2.1e-05  2.1e-05
+                   5.0e-06  1.2e-05  2.1e-05  1.2e-05  1.2e-05
+  Max Parallel  :    0.009  2.5e-03    0.009    0.008    0.009    0.008  2.6e-04
+                   3.5e-04    0.008    0.008  1.9e-04  1.0e-04
+  Max Barrier   :    0.008  2.1e-03    0.008    0.008  2.2e-03    0.008  7.3e-05
+                   1.5e-04  2.8e-04    0.008  8.4e-05  1.1e-06
+  Max Imbalance :  2.2e-05  2.1e-05  2.0e-05  2.0e-05  2.1e-05  2.1e-05  2.1e-05
+                   5.0e-06  1.2e-05  2.1e-05  1.2e-05  1.2e-05
+end
+
+Region #1 (has 12 threads) at main/25 in "unknown" (has 1 barriers):
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7       #8       #9      #10      #11
+  Sum Parallel  :    0.009  2.5e-03    0.009    0.008    0.009    0.008  2.6e-04
+                   3.5e-04    0.008    0.008  1.9e-04  1.0e-04
+  Sum Barrier   :    0.008  2.1e-03    0.008    0.008  2.2e-03    0.008  7.3e-05
+                   1.5e-04  2.8e-04    0.008  8.4e-05  1.1e-06
+  Min Parallel  :    0.009  2.5e-03    0.009    0.008    0.009    0.008  2.6e-04
+                   3.5e-04    0.008    0.008  1.9e-04  1.0e-04
+  Min Barrier   :    0.008  2.1e-03    0.008    0.008  2.2e-03    0.008  7.3e-05
+                   1.5e-04  2.8e-04    0.008  8.4e-05  1.1e-06
+  Max Parallel  :    0.009  2.5e-03    0.009    0.008    0.009    0.008  2.6e-04
+                   3.5e-04    0.008    0.008  1.9e-04  1.0e-04
+  Max Barrier   :    0.008  2.1e-03    0.008    0.008  2.2e-03    0.008  7.3e-05
+                   1.5e-04  2.8e-04    0.008  8.4e-05  1.1e-06
+end
+
+Region #1 (has 12 threads) profile:
+# Thread       Incl     Excl Routine 
+  0,0    :    0.009    0.000 main/25 "unknown"  
+  1,0    :    0.002    0.000 main/25 "unknown"  
+  2,0    :    0.008    0.000 main/25 "unknown"  
+  3,0    :    0.008    0.000 main/25 "unknown"  
+  4,0    :    0.007    0.000 main/25 "unknown"  
+  5,0    :    0.008    0.000 main/25 "unknown"  
+  6,0    :    0.000    0.000 main/25 "unknown"  
+  7,0    :    0.000    0.000 main/25 "unknown"  
+  8,0    :    0.002    0.000 main/25 "unknown"  
+  9,0    :    0.008    0.000 main/25 "unknown"  
+  10,0   :    0.000    0.000 main/25 "unknown"  
+  11,0   :    0.000    0.000 main/25 "unknown"  
+end
+
+Barrier region #(1,1) (has 12 threads) at main/43 in "unknown":
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7       #8       #9      #10      #11
+  Sum Parallel  :  2.7e-05  2.6e-05  2.6e-05  2.7e-05  2.7e-05  2.6e-05  2.7e-05
+                   2.7e-05  2.7e-05  2.7e-05  2.7e-05  2.7e-05
+  Sum Imbalance :  2.2e-05  2.1e-05  2.0e-05  2.0e-05  2.1e-05  2.1e-05  2.1e-05
+                   5.0e-06  1.2e-05  2.1e-05  1.2e-05  1.2e-05
+  Min Parallel  :  2.7e-05  2.6e-05  2.6e-05  2.7e-05  2.7e-05  2.6e-05  2.7e-05
+                   2.7e-05  2.7e-05  2.7e-05  2.7e-05  2.7e-05
+  Min Imbalance :  2.2e-05  2.1e-05  2.0e-05  2.0e-05  2.1e-05  2.1e-05  2.1e-05
+                   5.0e-06  1.2e-05  2.1e-05  1.2e-05  1.2e-05
+  Max Parallel  :  2.7e-05  2.6e-05  2.6e-05  2.7e-05  2.7e-05  2.6e-05  2.7e-05
+                   2.7e-05  2.7e-05  2.7e-05  2.7e-05  2.7e-05
+  Max Imbalance :  2.2e-05  2.1e-05  2.0e-05  2.0e-05  2.1e-05  2.1e-05  2.1e-05
+                   5.0e-06  1.2e-05  2.1e-05  1.2e-05  1.2e-05
+end
+
+Barrier region #(1,1) (has 12 threads) profile:
+# Thread       Incl     Excl Routine 
+  0,0    :    0.000    0.000 main/25 "unknown"  
+  1,0    :    0.000    0.000 main/25 "unknown"  
+  2,0    :    0.000    0.000 main/25 "unknown"  
+  3,0    :    0.000    0.000 main/25 "unknown"  
+  4,0    :    0.000    0.000 main/25 "unknown"  
+  5,0    :    0.000    0.000 main/25 "unknown"  
+  6,0    :    0.000    0.000 main/25 "unknown"  
+  7,0    :    0.000    0.000 main/25 "unknown"  
+  8,0    :    0.000    0.000 main/25 "unknown"  
+  9,0    :    0.000    0.000 main/25 "unknown"  
+  10,0   :    0.000    0.000 main/25 "unknown"  
+  11,0   :    0.000    0.000 main/25 "unknown"  
+end
+
+Serial program regions:
+  Serial region #1 executes for 0.01 seconds
+    begins at START OF PROGRAM
+    ends before region #1 (using 12 threads) at main/25 in "unknown"
+  Serial region #2 executes for 0.05 seconds
+    begins after region #1 (using 12 threads) at main/25 in "unknown"
+    ends at END OF PROGRAM
+end
+
+Serial region #1 profile:
+# Thread       Incl     Excl Routine 
+end
+
+Serial region #2 profile:
+# Thread       Incl     Excl Routine 
+end
+
+Program events (total):
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7       #8       #9      #10      #11
+  mppbeg        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+  mppend        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+  serial        :        2        0        0        0        0        0        0
+                         0        0        0        0        0
+  mppbar        :        1        1        1        1        1        1        1
+                         1        1        1        1        1
+  mppfkd        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+  mppfrk        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+  mppjoi        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+  mppadj        :       11        0        0        0        0        0        0
+                         0        0        0        0        0
+  mpptid        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+end
+
+Region #1 (has 12 threads) events:
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7       #8       #9      #10      #11
+  mppbar        :        1        1        1        1        1        1        1
+                         1        1        1        1        1
+  mppfrk        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+end
+
+Barrier region #(1,1) (has 12 threads) events:
+# Thread                #0       #1       #2       #3       #4       #5       #6
+#                       #7       #8       #9      #10      #11
+  mppjoi        :        1        0        0        0        0        0        0
+                         0        0        0        0        0
+end
+
+Serial section events:
+# Serial                #1       #2
+  mppbeg        :        1        0
+  mppend        :        0        1
+  serial        :        1        1
+  mppfkd        :        1        0
+  mppadj        :       11        0
+  mpptid        :        1        0
+end
+
+*** end
+
