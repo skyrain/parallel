@@ -1,3 +1,0 @@
-/usr/bin/time: cannot run ./omp: No such file or directory
-0.00user 0.00system 0:00.00elapsed 0%CPU (0avgtext+0avgdata 1312maxresident)k
-0inputs+8outputs (0major+70minor)pagefaults 0swaps

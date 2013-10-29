@@ -69,13 +69,13 @@ int main(int argc, char** argv)
 		}
 	}
 
-	//print matrices
+/*	//print matrices
 	printf("Matrice B:\n");
 	print_matrice(B, LEN, LEN);
-/*
+*/
 	printf("Matrice C:\n");
 	print_matrice(C, LEN, LEN);
-*/
+
 	return EXIT_SUCCESS;
 }
 

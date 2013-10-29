@@ -51,10 +51,10 @@ int main(int argc, char *argv[])
 				B[i][j] = rand() % RANGE;
 			}
 		}
-		//print matrice  B
+/*		//print matrice  B
 		printf("matrice B: \n");
 		print_matrice(B);
-	}
+*/	}
 	else 
 	{
 		tmp = (double *) malloc (sizeof(double) * N * N / p_size);

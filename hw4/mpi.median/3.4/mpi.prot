@@ -11,9 +11,9 @@ EXTENDED-VTF OFF
 # PROTOFILE-NAME was not set explicitly.
 PROTOFILE-NAME "mpi.prot"
 # LOGFILE-PREFIX was not set explicitly.
-LOGFILE-PREFIX "/gsfs2/home/u14/tianyuq/hw4/mpi.median/3.4"
+LOGFILE-PREFIX "/gsfs2/home/u14/tianyuq/hw4/mpi.median/3.4/exact_result"
 # CURRENT-DIR was not set explicitly.
-CURRENT-DIR "/gsfs2/home/u14/tianyuq/hw4/mpi.median/3.4"
+CURRENT-DIR "/gsfs2/home/u14/tianyuq/hw4/mpi.median/3.4/exact_result"
 # VERBOSE was not set explicitly.
 VERBOSE 1
 # LOGFILE-RANK was not set explicitly.
@@ -63,7 +63,7 @@ MEM-FLUSHBLOCKS 1024
 # MEM-OVERWRITE was not set explicitly.
 MEM-OVERWRITE OFF
 # FLUSH-PREFIX was not set explicitly.
-FLUSH-PREFIX "/tmp/pbs.103740.service0"
+FLUSH-PREFIX "/tmp/pbs.48183.service1"
 # FLUSH-PID was not set explicitly.
 FLUSH-PID ON
 # ENVIRONMENT was not set explicitly.
@@ -114,11 +114,11 @@ UNIFY-COUNTERS ON
 # INFO NUMPROCS was not set explicitly.
 INFO NUMPROCS 4
 # INFO CLUSTERDEF was not set explicitly.
-INFO CLUSTERDEF "htc35" 0:6908 1:6909 2:6910 3:6911
-INFO PROCESS 0 "htc35" "10.140.56.7" 6908
-INFO PROCESS 1 "htc35" "10.140.56.7" 6909
-INFO PROCESS 2 "htc35" "10.140.56.7" 6910
-INFO PROCESS 3 "htc35" "10.140.56.7" 6911
+INFO CLUSTERDEF "htc35" 0:1203 1:1204 2:1205 3:1206
+INFO PROCESS 0 "htc35" "10.140.56.7" 1203
+INFO PROCESS 1 "htc35" "10.140.56.7" 1204
+INFO PROCESS 2 "htc35" "10.140.56.7" 1205
+INFO PROCESS 3 "htc35" "10.140.56.7" 1206
 # STF-ACT-TIMELINE was not set explicitly.
 STF-ACT-TIMELINE 640
 # SYMBOL-HASHSIZE was not set explicitly.
@@ -142,8 +142,8 @@ MATCH-HASHSIZE 251
 # FUNCTRACE-HASHSIZE was not set explicitly.
 FUNCTRACE-HASHSIZE 509
 INFO BINMODE ""
-INFO TIMING "1":2.355000e-03
-INFO TIMING "2":2.246000e-03
-INFO TIMING "3":2.247000e-03
-INFO TIMING "0":4.125000e-03
+INFO TIMING "1":1.621000e-03
+INFO TIMING "2":2.243000e-03
+INFO TIMING "3":2.260000e-03
+INFO TIMING "0":2.664000e-03
 # TIMING <process ()>:<runtime (seconds)>

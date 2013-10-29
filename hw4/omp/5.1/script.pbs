@@ -15,7 +15,7 @@
 ### Set the queue to submit this job.
 #PBS -q standard 
 ### Set the number of cpus up to a maximum of 128
-#PBS -l select=1:ncpus=1:mem=17gb
+#PBS -l select=1:ncpus=1:mem=1gb
 #PBS -l pvmem=2gb
 
 ### Specify up to a maximum of 1600 hours total cpu time for the job

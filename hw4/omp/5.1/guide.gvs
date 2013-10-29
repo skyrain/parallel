@@ -22,21 +22,21 @@ Environment variables:
 end
 
 System parameters:
-  start      : Sun Oct 27 21:09:23 2013    
-  stop       : Sun Oct 27 21:09:24 2013    
-  host       : htc32       
+  start      : Sun Oct 27 21:29:23 2013    
+  stop       : Sun Oct 27 21:29:24 2013    
+  host       : htc31       
   ncpu       : 12          
 end
 
 Unix process parameters:
   maxrss     : 18816       
   minflt     : 1178        
-  majflt     : 1           
+  majflt     : 0           
   nswap      : 0           
-  inblock    : 136         
-  oublock    : 20488       
-  nvcsw      : 6           
-  nivcsw     : 79          
+  inblock    : 0           
+  oublock    : 22536       
+  nvcsw      : 4           
+  nivcsw     : 85          
 end
 
 Region counts:
@@ -47,24 +47,24 @@ end
 
 Program execution time (in seconds):
   cpu              :     0.00 sec    
-  elapsed          :     0.63 sec    
-    serial         :     0.63 sec    
+  elapsed          :     0.71 sec    
+    serial         :     0.71 sec    
     parallel       :     0.00 sec    
   cpu percent      :     0.01 %    
 end
 
 Summary over all regions (has 1 threads):
 # Thread                #0
-  Sum Parallel  :    0.045
-  Min Parallel  :    0.045
-  Max Parallel  :    0.045
+  Sum Parallel  :    0.037
+  Min Parallel  :    0.037
+  Max Parallel  :    0.037
 end
 
 Region #1 (has 1 threads) at main/25 in "unknown":
 # Thread                #0
-  Sum Parallel  :    0.045
-  Min Parallel  :    0.045
-  Max Parallel  :    0.045
+  Sum Parallel  :    0.037
+  Min Parallel  :    0.037
+  Max Parallel  :    0.037
 end
 
 Region #1 (has 1 threads) profile:
@@ -72,10 +72,10 @@ Region #1 (has 1 threads) profile:
 end
 
 Serial program regions:
-  Serial region #1 executes for 0.03 seconds
+  Serial region #1 executes for 0.02 seconds
     begins at START OF PROGRAM
     ends before region #1 (using 1 threads) at main/25 in "unknown"
-  Serial region #2 executes for 0.56 seconds
+  Serial region #2 executes for 0.65 seconds
     begins after region #1 (using 1 threads) at main/25 in "unknown"
     ends at END OF PROGRAM
 end

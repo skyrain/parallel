@@ -52,9 +52,9 @@ int main(int argc, char *argv[])
 			}
 		}
 		//print matrice  B
-		printf("matrice B: \n");
+/*		printf("matrice B: \n");
 		print_matrice(B);
-	}
+*/	}
 	else 
 	{
 		tmp = (double *) malloc (sizeof(double) * N * N / p_size);

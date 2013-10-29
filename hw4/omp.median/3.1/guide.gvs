@@ -22,21 +22,21 @@ Environment variables:
 end
 
 System parameters:
-  start      : Sun Oct 27 21:54:59 2013    
-  stop       : Sun Oct 27 21:54:59 2013    
+  start      : Sun Oct 27 21:55:39 2013    
+  stop       : Sun Oct 27 21:55:39 2013    
   host       : htc31       
   ncpu       : 12          
 end
 
 Unix process parameters:
-  maxrss     : 3132        
-  minflt     : 834         
+  maxrss     : 3140        
+  minflt     : 835         
   majflt     : 1           
   nswap      : 0           
   inblock    : 136         
   oublock    : 0           
-  nvcsw      : 6           
-  nivcsw     : 17          
+  nvcsw      : 5           
+  nivcsw     : 19          
 end
 
 Region counts:
@@ -47,8 +47,8 @@ end
 
 Program execution time (in seconds):
   cpu              :     0.00 sec    
-  elapsed          :     0.04 sec    
-    serial         :     0.04 sec    
+  elapsed          :     0.05 sec    
+    serial         :     0.05 sec    
     parallel       :     0.00 sec    
   cpu percent      :     0.01 %    
 end
