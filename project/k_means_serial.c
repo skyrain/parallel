@@ -9,8 +9,8 @@
 
 typedef struct Point
 {
-    double x;
-    double y;
+	double x;
+	double y;
 }Point;
 
 //--- array of data objects-----------
@@ -23,53 +23,67 @@ int membership[N];
 //---- generate random objects ------
 void initialize_object()
 {
-    int i;
-    srand(5);
-    for(i = 0; i < N; i++)
-    {
-        objects[i].x = rand() % RANGE;
-        objects[i].y = rand() % RANGE;
-    }
+	int i;
+	srand(5);
+	for(i = 0; i < N; i++)
+	{
+		objects[i].x = rand() % RANGE;
+		objects[i].y = rand() % RANGE;
+	}
 }
 
 double get_dist(Point p1, Point p2)
 {
-   double dist;
-   double tmp_1 = pow(p1.x - p2.x, 2);
-   double tmp_2 = pow(p1.y - p2.y, 2);
-   dist = abs(pow(tmp_1 + tmp_2, 0.5));
-   return dist;
+	double dist;
+	double tmp_1 = pow(p1.x - p2.x, 2);
+	double tmp_2 = pow(p1.y - p2.y, 2);
+	dist = abs(pow(tmp_1 + tmp_2, 0.5));
+	return dist;
 }
 
 k_means_clustering()
 {
-    double delta;
-    int i,j;   
-    
-    initialize_object();
- 
-    //------- initialize cluster centers -----
-    for(i = 0; i < K; i++)
-    {
-        clusters[i].x = objects[i].x;
-        clusters[i].y = objects[i].y;
-    } 
+	double delta;
+	int i,j;   
 
-    while(delta / (double)N > THRESHOLD)
-    {
-        delta = 0.0;
+	initialize_object();
 
-        for(i = 0; i < N; i++)
-        {
-            dist_min = get_dist(objects[i], clusters[0]);
+	//------- initialize cluster centers -----
+	for(i = 0; i < K; i++)
+	{
+		clusters[i].x = objects[i].x;
+		clusters[i].y = objects[i].y;
+	} 
+	//---- intialize membership ------------- 
+	for(i = 0; i < N; i++)
+		membership[i] = 0;	
 
-            for(j = 0; j < K; j++)
-            {
-                double dist = get_dist(objects[i], clusters[j]);
-                 
-            }
-        }
-    }
+	while(delta / (double)N > THRESHOLD)
+	{
+		delta = 0.0;
+
+		for(i = 0; i < N; i++)
+		{
+			dist_min = get_dist(objects[i], clusters[0]);
+			int n = 0;
+			for(j = 0; j < K; j++)
+			{
+				double dist = get_dist(objects[i], clusters[j]);
+				if(dist < dist_min)
+				{
+					dist_min = dist;
+					n = j;
+				}             
+			}
+			if (membership[i] != n)
+			{
+				delta += 1;
+				membership[i] = n;
+			}
+		}
+
+		//--- update to get new centers ---
+	}
 
 }
 
@@ -77,5 +91,5 @@ k_means_clustering()
 int main()
 {
 
-    return 0;    
+	return 0;    
 }
