@@ -1,0 +1,2 @@
+[0] Intel(R) Trace Collector INFO: Writing tracefile mpi.stf in /gsfs2/home/u14/tianyuq/proj/mpi/16
+[0] Intel(R) Trace Collector WARNING: message logging: 1875 different messages, 0 (0.0%) sends without receive, 0 (0.0%) receives without send, 4 (0.2%) messages with reversed time stamps (average duration 0.000000e+00s)

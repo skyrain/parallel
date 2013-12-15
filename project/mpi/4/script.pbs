@@ -1,6 +1,6 @@
 #!/bin/csh
 ### Set the job name
-#PBS -N skyrain_Serial
+#PBS -N skyrain_MPI
 
 ### Request email when job begins and ends
 #PBS -m bea
@@ -15,7 +15,7 @@
 ### Set the queue to submit this job.
 #PBS -q standard 
 ### Set the number of cpus up to a maximum of 128
-#PBS -l select=1:ncpus=1:mem=1gb
+#PBS -l select=1:ncpus=4:mem=1gb
 #PBS -l pvmem=2gb
 
 ### Specify up to a maximum of 1600 hours total cpu time for the job
@@ -25,14 +25,14 @@
 #PBS -l walltime=1:0:0
 
 
-cd ~tianyuq/proj/serial
+cd ~tianyuq/proj/mpi/4
 ### Example is: cd ~cihantunc/ece677/mpi/mpi_hello_world/
 
 source /usr/share/Modules/init/csh
 module load intel-mpi
 
 date
-/usr/bin/time -o mpi_prog.timing mpirun -np 1 ./serial
+/usr/bin/time -o mpi_prog.timing mpirun -np 4 ./mpi
 ### Example is: /usr/bin/time -o mpi_prog.timing mpirun -np 12 ./mpi_hello_world2
 ### DONT FORGET! YOUR_EXECUTABLE file should be in the directory you are now (This is why we have 'cd' above) or alternatively you can give the full path of your executable file.
 date
