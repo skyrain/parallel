@@ -3,8 +3,8 @@
 #include<math.h>
 
 #define N 1000
-#define K 3
-#define THRESHOLD 0.01
+#define K 5
+#define THRESHOLD 0.1
 #define RANGE 1000
 
 typedef struct Point
@@ -113,25 +113,6 @@ k_means_clustering()
 	while(delta / (double)N > THRESHOLD)
 	{
 		delta = 0.0;
-        //--- update to get new centers for each cluster---
-        for(i = 0; i < K; i++)
-        {
-            double new_center_x = 0;
-            double new_center_y = 0; 
-            int cluster_num = 0;
-            for(j = 0; j < N; j++)
-            {
-                if(membership[j] == i)
-                {
-                    new_center_x += objects[j].x;
-                    new_center_y += objects[j].y;
-                    cluster_num ++;
-                }
-            }
-            clusters[i].x = new_center_x / cluster_num;
-            clusters[i].y = new_center_y / cluster_num;
-        }       
-     
         //--- calculate to update each obj's membership ----
 		for(i = 0; i < N; i++)
 		{
@@ -153,8 +134,26 @@ k_means_clustering()
 			}
 		}
 		
+        //--- update to get new centers for each cluster---
+        for(i = 0; i < K; i++)
+        {
+            double new_center_x = 0;
+            double new_center_y = 0; 
+            int cluster_num = 0;
+            for(j = 0; j < N; j++)
+            {
+                if(membership[j] == i)
+                {
+                    new_center_x += objects[j].x;
+                    new_center_y += objects[j].y;
+                    cluster_num ++;
+                }
+            }
+            clusters[i].x = new_center_x;
+            clusters[i].y = new_center_y;
+        }       
+        
         //-- printf the resulting cluster ------
-        printf("delta %f \n", delta);
         printcluster();   
 	}
 
